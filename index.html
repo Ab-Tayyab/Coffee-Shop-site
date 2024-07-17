@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,34 +7,90 @@
     <link rel="stylesheet" href="/styles/navbar.css" />
   </head>
   <body>
-    <!-- Navigation bar -->
-    <nav>
-      <div class="desktop-nav">
-        <h1>COFFEE</h1>
-        <ul class="desktop-menu">
-          <li><a id="#">Home</a></li>
-          <li><a id="#">About</a></li>
-          <li><a id="#">Service</a></li>
-          <li><a id="#">Menu</a></li>
-          <li><a id="#">Contact</a></li>
-        </ul>
-        <div id="toggle-button" >
-          <div class="btn1"></div>
-          <div class="btn2"></div>
-          <div class="btn3"></div>
+    
+    <section class="first-section">
+      <nav>
+        <div class="desktop-nav">
+          <h1>COFFEE</h1>
+          <ul class="desktop-menu">
+            <li><a id="#">Home</a></li>
+            <li><a id="#">About</a></li>
+            <li><a id="#">Service</a></li>
+            <li><a id="#">Menu</a></li>
+            <li><a id="#">Contact</a></li>
+          </ul>
+          <div id="toggle-button">
+            <div class="btn1"></div>
+            <div class="btn2"></div>
+            <div class="btn3"></div>
+          </div>
         </div>
-      </div>
-      <div class="mobile-menu">
-        <ul>
-          <li><a id="#">Home</a></li>
-          <li><a id="#">About</a></li>
-          <li><a id="#">Service</a></li>
-          <li><a id="#">Menu</a></li>
-          <li><a id="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class="mobile-menu">
+          <ul>
+            <li><a id="#">Home</a></li>
+            <li><a id="#">About</a></li>
+            <li><a id="#">Service</a></li>
+            <li><a id="#">Menu</a></li>
+            <li><a id="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
 
     <script src="/javascript/navbar.js"></script>
   </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="../../images/logo2.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skill" class="nav-link">Skill</a></li>
+                <li><a href="#project" class="nav-link">Project</a></li>
+                <li><a href="#faq" class="nav-link">Faq</a></li>
+            </ul>
+            <li class="action_btn"><a href="#contact">Contact</a></li>
+            <div class="toggle_btn" id="toggleBtn">
+                <h6>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.7em" width="1.7em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 224h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16zm416 192H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm3.17-384H172.83A12.82 12.82 0 0 0 160 44.83v38.34A12.82 12.82 0 0 0 172.83 96h262.34A12.82 12.82 0 0 0 448 83.17V44.83A12.82 12.82 0 0 0 435.17 32zm0 256H172.83A12.82 12.82 0 0 0 160 300.83v38.34A12.82 12.82 0 0 0 172.83 352h262.34A12.82 12.82 0 0 0 448 339.17v-38.34A12.82 12.82 0 0 0 435.17 288z"></path>
+                    </svg>
+                </h6>
+            </div>
+        </div>
+        <div>
+            <ul class="dropdown_menu" id="dropdownMenu">
+                <div class="menu-close" id="menuClose">
+                    <h6>
+                        <svg class="close-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" height="1.7em" width="1.7em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+                        </svg>
+                    </h6>
+                </div>
+                <li><a href="#home" class="drop-link">Home</a></li>
+                <li><a href="#about" class="drop-link">About</a></li>
+                <li><a href="#skill" class="drop-link">Skill</a></li>
+                <li><a href="#project" class="drop-link">Project</a></li>
+                <li><a href="#faq" class="drop-link">Faq</a></li>
+                <li class="action_btn"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script src="/javascript/navbar.js"></script>
+</body>
 </html>
