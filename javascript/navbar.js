@@ -1,38 +1,25 @@
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const mobileMenu = document.querySelector(".mobile-menu");
-//   const toggleBtn = document.getElementById("toggle-button");
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('toggle-button');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuItems = document.querySelectorAll('.menu-item')
 
-//   toggleBtn.addEventListener("click", function () {
-//     if (mobileMenu.style.display === "block") {
-//       mobileMenu.style.display = "none";
-//       toggleBtn.classList.remove("change");
-//     } else {
-//       mobileMenu.style.display = "block";
-//       toggleBtn.classList.add("change");
-//     }
-//   });
+  toggleButton.addEventListener('click', function () {
+    mobileMenu.classList.toggle('open');
+    toggleButton.classList.toggle('change'); // add class for add animation.
+  });
 
- 
-//   window.addEventListener("resize", function () {
-//     if (mobileMenu.style.display === "block" && window.innerWidth > 850) {
-//       mobileMenu.style.display = "none";
-//     }
-//   });
-// });
+  // this function is used for active class when click on menu and it become active.
+  
+  menuItems.forEach(item => {
+    item.addEventListener("click", function(event) {
+        event.preventDefault();  // Prevent the default link behavior
 
-document.addEventListener('DOMContentLoaded', function() {
-  const toggleBtn = document.getElementById('toggleBtn');
-  const menuClose = document.getElementById('menuClose');
-  const dropdownMenu = document.getElementById('dropdownMenu');
+        // Remove the active class from all menu items
+        menuItems.forEach(i => i.classList.remove("active"));
 
-  let isOpen = false;
-
-  function handleToggle() {
-      isOpen = !isOpen;
-      dropdownMenu.classList.toggle('open', isOpen);
-  }
-
-  toggleBtn.addEventListener('click', handleToggle);
-  menuClose.addEventListener('click', handleToggle);
+        // Add the active class to the clicked menu item
+        this.classList.add("active");
+    });
+});
 });
