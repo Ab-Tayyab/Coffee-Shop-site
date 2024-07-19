@@ -1,0 +1,99 @@
+.about {
+    padding: 20px;
+    font-family: sans-serif roboto;
+}
+
+.about>h2 {
+    text-align: center;
+    color: #da9f5b;
+}
+
+.about>h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+.about-vertical-line {
+    width: 2px;
+    height: 100px;
+    margin: auto;
+    background-color: #da9f5b;
+}
+
+.about-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.child {
+    max-width: 350px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.child h1 {
+    font-weight: 700;
+    color: #33211D;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.about-child-1 h3 {
+    color: #33211D;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.about-child-1 p {
+    color: #555555;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.about-child-1 button {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.about-child-2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-child-3 p {
+    color: #555555;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.about-child-3 div{
+    display: flex;
+    gap: 40px;
+}
+.about-child-3 div i{
+    line-height: 1em;
+    font-size: 20px;
+    color: #da9f5b;
+}
+.about-child-3 div p{
+    font-size: 20px;
+    color: #33211D;
+}
+.about-child-3 button {
+    background-color: #da9f5b;
+    color: black;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}

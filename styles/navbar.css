@@ -45,14 +45,14 @@ body {
 }
 
 .all-menu a:hover {
-  color: #fd7e14;
+  color: #da9f5b;
 }
 .all-menu a:active{
-  color: #fd7e14;
+  color: #da9f5b;
   background-color: white;
 }
 .all-menu a.active{
-  color: #fd7e14;
+  color: #da9f5b;
   background-color: white;
 }
 
@@ -107,6 +107,7 @@ body {
   margin-top: 68px;
   transition: 0.5s ease;
   padding-top: 20px;
+  z-index: 1;
 }
 
 .mobile-menu ul {
