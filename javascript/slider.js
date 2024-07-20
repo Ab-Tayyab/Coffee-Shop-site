@@ -26,10 +26,10 @@ function displaySlides(n) {
 }
 
 // Auto slide functionality
-function autoSlide() {
-  nextSlide(1);
-  setTimeout(autoSlide, 5000); // Change slide every 5 seconds (5000 milliseconds)
-}
+// function autoSlide() {
+//   nextSlide(1);
+//   setTimeout(autoSlide, 5000); 
+// }
 
 // Start auto slide
-autoSlide();
+// autoSlide();
