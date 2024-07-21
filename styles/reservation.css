@@ -1,0 +1,69 @@
+.reservation {
+    background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url('/img/bg.jpg');
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reservation>div {
+    max-width: 550px;
+    justify-content: space-around;
+}
+
+.reservation-content>h1 {
+    font-size: 52px;
+    color: #da9f5b;
+    padding-bottom: 10px;
+}
+
+.reservation-content>h2 {
+    font-size: 32px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.reservation-content>p {
+    font-size: 16px;
+    color: white;
+}
+
+.reservation-check p {
+    color: white !important;
+}
+
+.reservation-form>h1 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form button {
+    width: 414px;
+    height: 50px;
+    border-color: #da9f5b;
+    margin-bottom: 10px;
+    background-color: transparent;
+    outline-color: #da9f5b;
+    color: white;
+}
+
+.reservation-form select>option {
+    color: black;
+}
+
+.reservation-form input::placeholder {
+    color: white;
+    padding-left: 10px;
+}
+
+.reservation-form button {
+    background-color: #da9f5b;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
