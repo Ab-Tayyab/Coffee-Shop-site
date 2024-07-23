@@ -1,4 +1,4 @@
-.subscription{
+.subscription {
     background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url('/img/bg.jpg');
     width: 100%;
     height: 100vh;
@@ -8,30 +8,36 @@
     justify-content: center;
     color: white;
 }
-.subscription h1{
+
+.subscription h1 {
     color: #da9f5b;
     font-size: 50px;
     padding-bottom: 15px;
 }
-.subscription h2{
+
+.subscription h2 {
     font-size: 32px;
     padding-bottom: 15px;
 }
-.subscription h3{
+
+.subscription h3 {
     font-size: 22px;
     padding-bottom: 15px;
     text-align: center;
 }
-.subscription form{
+
+.subscription form {
     margin-top: 20px;
 }
-.subscription input{
+
+.subscription input {
     width: 300px;
     height: 50px;
     border: none;
     padding-left: 20px;
 }
-.subscription button{
+
+.subscription button {
     width: 80px;
     height: 50px;
     margin-left: -5px;
@@ -42,20 +48,37 @@
     font-size: 16px;
     padding-bottom: 2px;
 }
-.subscription button:hover{
+
+.subscription button:hover {
     background-color: #d58931;
     transition: all ease 0.5s;
 }
 
-.subscription input::placeholder{
+.subscription input::placeholder {
     padding-left: 20px;
     font-size: 16px;
 }
-.subscription input{
+
+.subscription input {
     border: 3px solid #ccc;
     outline: none;
     caret-color: #da9f5b;
 }
-.subscription input:focus{
+
+.subscription input:focus {
     border-color: #33211D;
+}
+
+@media (max-width:420px) {
+    .subscription input {
+        width: 250px;
+        height: 40px;
+    }
+
+    .subscription button {
+        width: 50px;
+        height: 40px;
+        font-size: 12px;
+        padding-top: 4px;
+    }
 }
