@@ -25,14 +25,14 @@
     max-width: 600px;
 }
 
-.all-menu{
+.all-menues{
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.all-menu:nth-child(2){
+.all-menues:nth-child(2){
     max-width: 400px;
 }
 
