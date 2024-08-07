@@ -19,18 +19,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateDots() {
         // Update the dot navigation based on the number of pages
+        const totalPages = Math.ceil(testimonials.length / testimonialsPerPage);
         dots.forEach((dot, index) => {
-            dot.style.display = (index <= Math.floor((testimonials.length - 1) / testimonialsPerPage)) ? 'inline-block' : 'none';
+            dot.style.display = (index < totalPages) ? 'inline-block' : 'none';
         });
     }
 
     // Handle dot click
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
-            if (index < dots.length) {
-                currentIndex = index;
-                showTestimonials(currentIndex);
-            }
+            currentIndex = index;
+            showTestimonials(currentIndex);
         });
     });
 
