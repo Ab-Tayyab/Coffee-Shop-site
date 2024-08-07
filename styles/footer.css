@@ -1,5 +1,6 @@
 .footer{
     background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url('/img/bg.jpg');
+    padding: 20px 0px;
 }
 
 .footer-child1 {
@@ -10,7 +11,8 @@
 }
 
 .footer-child1 div{
-    max-width: 25%;
+    max-width: 300px;
+    margin-top: 20px;
 }
 
 .footer-child1 div h1{
@@ -22,7 +24,6 @@
 .footer-contact div{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
     margin-bottom: 15px;
 }
 

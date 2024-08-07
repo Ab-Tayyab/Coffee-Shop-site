@@ -86,6 +86,11 @@ input[type="date"], input[type='time'] {
     font-size: 16px;
     font-weight: 600;
 }
+.reservation-form button:hover{
+    background-color: #d7a46a;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
 
 @media (max-width:670px) {
     .reservation-content p{
