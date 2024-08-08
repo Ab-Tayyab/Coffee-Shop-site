@@ -64,6 +64,11 @@
     cursor: pointer;
 }
 
+.about-child-1 button:hover{
+    background-color:rgb(66, 66, 66);
+    transition: ease-in-out 0.5s;
+    border-radius: 5px;
+}
 .about-child-2 img {
     max-width: 100%;
     height: auto;
@@ -90,11 +95,17 @@
 }
 .about-child-3 button {
     background-color: #da9f5b;
-    color: black;
+    color: white;
     width: 150px;
     height: 50px;
     font-size: 18px;
     margin-top: 10px;
     border: none;
     cursor: pointer;
+}
+
+.about-child-3 button:hover{
+    background-color: #d8a56b;
+    transition: ease-in-out 0.5s;
+    border-radius: 5px;
 }

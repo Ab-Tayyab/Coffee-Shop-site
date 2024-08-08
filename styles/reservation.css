@@ -17,6 +17,7 @@
 .reservation-content{
     padding: 0px 10px;
 }
+
 .reservation-form{
     margin: auto;
 }
@@ -82,12 +83,12 @@ input[type="date"], input[type='time'] {
 
 .reservation-form button {
     background-color: #da9f5b;
-    color: black;
+    color: white;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
 }
 .reservation-form button:hover{
-    background-color: #d7a46a;
+    background-color: #d8a56b;
     transition: ease-in-out 0.5s;
     cursor: pointer;
 }

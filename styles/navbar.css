@@ -4,15 +4,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   font-family: Arial, sans-serif;
 }
 
+/* Make navbar fixed */
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
 
 .navbar {
   display: flex;
@@ -21,16 +29,18 @@ body {
   background-color: #33211D;
   color: #fff;
   padding: 20px 20px;
-
 }
 
 .navbar-logo {
   flex: 1;
 }
-
-.navbar-logo img {
-  height: 40px;
-  /* Adjust height as needed */
+.navbar h1 a{
+  text-decoration: none;
+  color: white;
+}
+.navbar-logo h1 a:hover{
+  color: #da9f5b;
+  transition: ease-in-out 0.5s;
 }
 
 .navbar-menu ul {
@@ -53,6 +63,7 @@ body {
 
 .all-menu a:hover {
   color: #da9f5b;
+  transition: ease-in-out 0.5s;
 }
 
 .all-menu a:active {
@@ -77,7 +88,6 @@ body {
   cursor: pointer;
 }
 
-
 .all-btn {
   width: 100%;
   height: 5px;
@@ -86,9 +96,7 @@ body {
   transition: all 0.5s;
 }
 
-
 /* toggle button animation */
-
 .change {
   transform: rotate(360deg);
 }
@@ -106,18 +114,16 @@ body {
 }
 
 /* mobile menu animation when it open and close */
-
 .mobile-menu {
   position: fixed;
-  top: 0;
+  top: 67px; /* Adjusted for fixed navbar */
   left: -100%;
   height: 100%;
   width: 100%;
   background-color: #33211D;
-  margin-top: 67px;
   transition: 0.5s ease;
   padding-top: 20px;
-  z-index: 1;
+  z-index: 999; /* Just below navbar */
 }
 
 .mobile-menu ul {
@@ -139,7 +145,6 @@ body {
   padding: 10px;
   text-decoration: none;
 }
-
 
 /* Media query for responsive design */
 @media (max-width: 768px) {

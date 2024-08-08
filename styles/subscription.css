@@ -39,19 +39,19 @@
 
 .subscription button {
     width: 80px;
-    height: 50px;
+    height: 50.5px;
     margin-left: -5px;
     background-color: #da9f5b;
-    color: black;
+    color: white;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     font-size: 16px;
     padding-bottom: 2px;
 }
-
-.subscription button:hover {
-    background-color: #d58931;
-    transition: all ease 0.5s;
+.subscription button:hover{
+    background-color: #d8a56b;
+    transition: ease-in-out 0.5s;
 }
 
 .subscription input::placeholder {

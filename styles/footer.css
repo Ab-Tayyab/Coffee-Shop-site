@@ -56,7 +56,7 @@ margin-top: 10px;
 
 .footer-email input{
     width: 250px;
-    height: 30px;
+    height: 40px;
     border: 2px solid #da9f5b;
     background-color: transparent;
     color: white;
@@ -65,14 +65,15 @@ margin-top: 10px;
 .footer button{
     background-color: #da9f5b;
     border: none;
-    height: 30px;
+    height: 40px;
     padding: 0px 5px;
     font-weight: bold;
+    color: white;
 }
 
 .footer-email button:hover{
     cursor: pointer;
-    background-color: #daad7a;
+    background-color: #d8a56b;
     transition: ease-in-out 0.5s;
 }
 
