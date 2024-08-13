@@ -6,13 +6,23 @@ const reservationRoutes = require('./components/reservationRoutes.js');
 
 dotenv.config();
 connectDB();
+
 const app = express();
 
+// Apply CORS middleware
 app.use(cors({
-    origin: ["https://coffee-shop-site-client.vercel.app"],
+    origin: "https://coffee-shop-site-client.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"]
+}));
+
+// Handle preflight requests
+app.options('*', cors({
+    origin: "https://coffee-shop-site-client.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
 }));
 
 app.use(express.json());
