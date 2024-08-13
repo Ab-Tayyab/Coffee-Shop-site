@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./components/db.js');
 const reservationRoutes = require('./components/reservationRoutes.js');
+const subscriptionRoutes = require('./components/subscriptionRoutes.js');
 
 dotenv.config();
 connectDB();
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/table', reservationRoutes);
+app.use('/api/subscription', subscriptionRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

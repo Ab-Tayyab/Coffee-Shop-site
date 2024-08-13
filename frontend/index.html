@@ -184,14 +184,15 @@
   </div>
 
   <!-- Subscription Section -->
-  <div class="subscription">
+  <div class="subscription" id="subscription">
     <h1>50% OFF</h1>
     <h2>Sunday Special Offer</h2>
     <h3>Only for Sunday from 1st Jan to 30th Jan 2045</h3>
-    <form action="">
-      <input type="email" placeholder="Your Email">
+    <form action="" id="subscriptionForm">
+      <input id="subscriptionEmail" type="email" placeholder="Your Email">
       <button>Submit</button>
     </form>
+    <div id="toast" class="toast"></div>
   </div>
 
   <!-- Menu & Sebcription -->
@@ -424,14 +425,6 @@
           <i class="fa fa-youtube"></i>
         </div>
       </div>
-      <div class="footer-email">
-        <h1>NewsLetter</h1>
-        <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-        <div>
-          <input type="email" placeholder="Your Email">
-          <button>Subscribe</button>
-        </div>
-      </div>
     </div>
     <div>
       <p>Copyright © Domain. All Rights Reserved.</p>
@@ -444,6 +437,7 @@
   <script src="./javascript/slider.js"></script>
   <script src="./javascript/form.js"></script>
   <script src="./javascript/testimonial.js"></script>
+  <script src="./javascript/subscription.js"></script>
 </body>
 
 </html>

@@ -82,3 +82,37 @@
         padding-top: 4px;
     }
 }
+
+
+/* Toast Notification Styles */
+.Emailtoast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #d8a56b; /* Toast background color */
+    color: #fff; /* Toast text color */
+    text-align: center;
+    border-radius: 4px; /* Rounded corners */
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 16px; /* Position from the right edge */
+    top: 100px; /* Position from the top edge */
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateX(100%); /* Start position off-screen */
+}
+
+.Emailtoast.showEmail {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0); /* Move to the final position */
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+    .Emailtoast {
+        min-width: 200px; /* Adjust width for smaller screens */
+        font-size: 15px; /* Adjust font size for smaller screens */
+    }
+}
