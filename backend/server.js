@@ -9,12 +9,9 @@ connectDB();
 
 const app = express();
 
-// Apply CORS middleware with specific origin
-app.use(cors({
-    origin: 'https://coffee-shop-site-client.vercel.app',
-    methods: ['GET', 'POST'],
-    credentials: true,
-}));
+// Apply CORS middleware
+app.use(cors());
+
 
 app.use(express.json());
 
