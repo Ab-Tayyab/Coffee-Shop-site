@@ -9,19 +9,10 @@ connectDB();
 
 const app = express();
 
-// Apply CORS middleware
+// Apply CORS middleware with specific origin
 app.use(cors({
-    origin: "https://coffee-shop-site-client.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-}));
-
-// Handle preflight requests
-app.options('*', cors({
-    origin: "https://coffee-shop-site-client.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    origin: 'https://coffee-shop-site-client.vercel.app',
+    methods: ['GET', 'POST'],
     credentials: true,
 }));
 

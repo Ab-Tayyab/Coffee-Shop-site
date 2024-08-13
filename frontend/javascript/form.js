@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
         this.showPicker();
     });
 });
-
 document.getElementById('reservationForm').addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -41,7 +40,6 @@ document.getElementById('reservationForm').addEventListener('submit', async (e) 
             headers: {
                 'Content-Type': 'application/json',
             },
-            credentials: 'include',
             body: JSON.stringify(reservationData),
         });
 
