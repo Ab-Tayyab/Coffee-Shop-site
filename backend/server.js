@@ -8,7 +8,12 @@ const reservationRoutes = require('./components/reservationRoutes.js');
 dotenv.config();
 connectDB();
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: [""],
+    method: ["POST"],
+    credentials: true,
+
+}));
 
 app.use(express.json());
 
