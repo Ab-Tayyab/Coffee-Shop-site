@@ -1,4 +1,3 @@
-
 const dotenv = require('dotenv');
 const express = require('express');
 const cors = require('cors');
@@ -8,11 +7,12 @@ const reservationRoutes = require('./components/reservationRoutes.js');
 dotenv.config();
 connectDB();
 const app = express();
+
 app.use(cors({
     origin: ["https://coffee-shop-site-client.vercel.app"],
-    method: ["POST"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
-
+    allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 app.use(express.json());
@@ -23,9 +23,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/table', reservationRoutes);
 
-
 const PORT = process.env.PORT || 5000;
-app.listen(5000, () => {
-    PORT,
-        console.log(`Server is running mode on port ${PORT}`);
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
