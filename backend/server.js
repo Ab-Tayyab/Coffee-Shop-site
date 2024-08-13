@@ -9,7 +9,7 @@ dotenv.config();
 connectDB();
 const app = express();
 app.use(cors({
-    origin: [""],
+    origin: ["https://coffee-shop-site-client.vercel.app"],
     method: ["POST"],
     credentials: true,
 
