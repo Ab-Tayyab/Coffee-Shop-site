@@ -13,15 +13,16 @@ const app = express();
 // Apply CORS middleware
 app.use(cors());
 
-
 app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send("API is running ...");
 });
 
-app.use('/api/table', reservationRoutes);
+
+
 app.use('/api/subscription', subscriptionRoutes);
+app.use('/api/table', reservationRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
