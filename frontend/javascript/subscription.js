@@ -11,7 +11,7 @@ document.getElementById('subscription').addEventListener('submit', async (e) => 
     };
 
     try {
-        const response = await fetch('https://coffee-shop-server-three.vercel.app/api/subscription', { 
+        const response = await fetch('https://coffee-shop-server-three.vercel.app:5000/api/subscription', { 
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json',
