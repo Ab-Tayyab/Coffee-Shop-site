@@ -10,27 +10,15 @@ connectDB();
 
 const app = express();
 
-// Apply CORS middleware
+// Properly configure CORS
 app.use(cors({
-    origin: "https://coffee-shoop.vercel.app",
-    methods: ["POST"],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    origin: "https://coffee-shoop.vercel.app", // Allow your frontend's origin
+    methods: ["GET", "POST", "PUT", "DELETE"], // Specify the methods allowed
+    allowedHeaders: ['Content-Type', 'Authorization'], // Specify the allowed headers
+    credentials: true // If you need to send cookies with the requests
 }));
 
-// Middleware to check the token
-app.use((req, res, next) => {
-    const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1];
-    
-    if (!token) {
-        return res.sendStatus(403); // Forbidden
-    }
-
-    // Validate the token here if needed
-    // Example: if (token !== process.env.MY_API_TOKEN) return res.sendStatus(403);
-    
-    next();
-});
+app.options('*', cors()); // Handle preflight requests
 
 app.use(express.json());
 

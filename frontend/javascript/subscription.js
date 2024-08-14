@@ -11,12 +11,14 @@ document.getElementById('subscription').addEventListener('submit', async (e) => 
     try {
         const response = await fetch('https://coffee-shop-server-phi.vercel.app/api/subscription', { 
             method: 'POST', 
+            mode: 'no-cors', // Use only if you're unable to resolve CORS issues
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `rznlIOuI9FXhX6ntcuClN2vi` // Replace with the actual token
+                // 'Authorization': `Bearer YOUR_API_TOKEN`
             },
             body: JSON.stringify(subscriptionData),
         });
+        
 
         if (response.ok) {
             toast.textContent = 'You Got 50% Discount!';
