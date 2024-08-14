@@ -36,7 +36,8 @@ document.getElementById('reservationForm').addEventListener('submit', async (e) 
     };
 
     try {
-        const response = await fetch('http://localhost:5000/api/table', { 
+        const response = await fetch('https://coffee-shop-server-phi.vercel.app/api/table', { 
+            // const response = await fetch('http://localhost:5000/api/table', { 
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json',
