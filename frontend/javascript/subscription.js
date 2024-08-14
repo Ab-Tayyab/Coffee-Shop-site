@@ -1,3 +1,4 @@
+
 document.getElementById('subscription').addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -9,16 +10,13 @@ document.getElementById('subscription').addEventListener('submit', async (e) => 
     };
 
     try {
-        // const response = await fetch('https://coffee-shop-server-phi.vercel.app/api/subscription', { 
-            const response = await fetch('https://localhost:5000/api/subscription', { 
+        const response = await fetch('http://localhost:5000/api/subscription', { 
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json',
-                // 'Authorization': `Bearer YOUR_API_TOKEN`
             },
             body: JSON.stringify(subscriptionData),
         });
-        
 
         if (response.ok) {
             toast.textContent = 'You Got 50% Discount!';
@@ -28,7 +26,7 @@ document.getElementById('subscription').addEventListener('submit', async (e) => 
             }, 3000);
             form.reset();
         } else {
-            toast.textContent = 'Failed to get a Discount';
+            toast.textContent = 'Failed to get a Dicount';
             toast.className = 'toast show';
             setTimeout(() => {
                 toast.className = 'toast';

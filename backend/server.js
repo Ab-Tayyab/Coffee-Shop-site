@@ -1,6 +1,6 @@
+const dotenv = require('dotenv');
 const express = require('express');
 const cors = require('cors');
-const dotenv = require('dotenv');
 const connectDB = require('./components/db.js');
 const reservationRoutes = require('./components/reservationRoutes.js');
 const subscriptionRoutes = require('./components/subscriptionRoutes.js');
@@ -10,8 +10,9 @@ connectDB();
 
 const app = express();
 
-// Properly configure CORS
+// Apply CORS middleware
 app.use(cors());
+
 
 app.use(express.json());
 
@@ -19,8 +20,8 @@ app.get('/', (req, res) => {
     res.send("API is running ...");
 });
 
-app.use('/api/subscription', subscriptionRoutes);
 app.use('/api/table', reservationRoutes);
+app.use('/api/subscription', subscriptionRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
