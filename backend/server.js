@@ -11,14 +11,7 @@ connectDB();
 const app = express();
 
 // Properly configure CORS
-app.use(cors({
-    origin: "https://coffee-shoop.vercel.app", // Allow your frontend's origin
-    methods: ["GET", "POST", "PUT", "DELETE"], // Specify the methods allowed
-    allowedHeaders: ['Content-Type', 'Authorization'], // Specify the allowed headers
-    credentials: true // If you need to send cookies with the requests
-}));
-
-app.options('*', cors()); // Handle preflight requests
+app.use(cors());
 
 app.use(express.json());
 
