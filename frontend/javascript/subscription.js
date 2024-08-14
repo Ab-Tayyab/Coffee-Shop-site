@@ -9,7 +9,8 @@ document.getElementById('subscription').addEventListener('submit', async (e) => 
     };
 
     try {
-        const response = await fetch('https://coffee-shop-server-phi.vercel.app/api/subscription', { 
+        // const response = await fetch('https://coffee-shop-server-phi.vercel.app/api/subscription', { 
+            const response = await fetch('https://localhost:5000/api/subscription', { 
             method: 'POST', 
             mode: 'no-cors', // Use only if you're unable to resolve CORS issues
             headers: {
