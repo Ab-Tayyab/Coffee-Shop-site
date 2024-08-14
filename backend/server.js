@@ -13,11 +13,11 @@ const app = express();
 // Apply CORS middleware
 app.use(cors());
 
-app.use(cors({
-    origin: 'https://coffee-shoop.vercel.app', // Replace with your frontend domain
-    methods: ['POST'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// app.use(cors({
+//     origin: 'https://coffee-shoop.vercel.app', // Replace with your frontend domain
+//     methods: ['POST'],
+//     allowedHeaders: ['Content-Type', 'Authorization']
+// }));
 
 
 app.use(express.json());
