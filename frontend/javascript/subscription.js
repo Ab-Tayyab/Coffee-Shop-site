@@ -9,9 +9,10 @@ document.getElementById('subscription').addEventListener('submit', async (e) => 
     const subscriptionData = {
         email: document.getElementById('subscriptionEmail').value,
     };
-
+    https://coffee-shop-server-phi.vercel.app 
     try {
-        const response = await fetch('http://localhost:5000/api/subscription', { 
+        // const response = await fetch('http://localhost:5000/api/subscription', { 
+            const response = await fetch('https://coffee-shop-server-phi.vercel.app/api/subscription', { 
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json',
