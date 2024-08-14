@@ -15,7 +15,7 @@ app.use(cors());
 
 app.use(cors({
     origin: 'https://coffee-shoop.vercel.app/', // Replace with your frontend domain
-    methods: ['GET'],
+    methods: ['POST'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
